@@ -61,7 +61,6 @@ public class MainActivity extends BaseActivity implements ConfigBase.OnConfigCha
 
     private boolean mBroadcasting;
 
-    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +70,7 @@ public class MainActivity extends BaseActivity implements ConfigBase.OnConfigCha
         getConfig().registerListener(this);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-6887589184636373/3983382449");
+        mInterstitialAd.setAdUnitId(ADD_CODE_HERE_OR_REMOVE_ADS);
         AdRequest adRequestInterstial = new AdRequest.Builder()
                 .addTestDevice("FF72EAFF80BD1240CF666E22BD94403C")
                 .build();
